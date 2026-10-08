@@ -1,0 +1,427 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* ----------------------------- */
+/* Statistics */
+/* ----------------------------- */
+
+.task-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+
+.stat {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+
+.stat strong {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+
+.stat span {
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* ----------------------------- */
+/* Add Task */
+/* ----------------------------- */
+
+.add-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+
+.add-form input,
+.add-form select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+.add-form input[type="text"] {
+    flex: 1;
+}
+
+
+button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.add-button {
+    background-color: #333;
+    color: white;
+}
+
+
+.add-button:hover {
+    background-color: #555;
+}
+
+
+/* ----------------------------- */
+/* Search */
+/* ----------------------------- */
+
+.search-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.search-form input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.search-button {
+    background-color: #555;
+    color: white;
+}
+
+
+/* ----------------------------- */
+/* Filters */
+/* ----------------------------- */
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+
+.filters a {
+    text-decoration: none;
+    color: #555;
+    background-color: #eee;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+.filters a:hover {
+    background-color: #ddd;
+}
+
+
+.filters .active-filter {
+    background-color: #333;
+    color: white;
+}
+
+
+/* ----------------------------- */
+/* Task List */
+/* ----------------------------- */
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.task-info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.task-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+
+/* ----------------------------- */
+/* Due Date */
+/* ----------------------------- */
+
+.due-date {
+    font-size: 13px;
+    color: #777;
+}
+
+
+/* ----------------------------- */
+/* Priority */
+/* ----------------------------- */
+
+.priority {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.priority-high {
+    background-color: #f5c6c6;
+    color: #8b0000;
+}
+
+
+.priority-medium {
+    background-color: #f5dfb3;
+    color: #7a5200;
+}
+
+
+.priority-low {
+    background-color: #c9e8c9;
+    color: #286628;
+}
+
+
+/* ----------------------------- */
+/* Actions */
+/* ----------------------------- */
+
+.actions {
+    display: flex;
+    gap: 5px;
+    flex-shrink: 0;
+}
+
+
+.edit-button {
+    background-color: #ddd;
+}
+
+
+.complete-button {
+    background-color: #b8e0b8;
+}
+
+
+.delete-button {
+    background-color: #e8b8b8;
+}
+
+
+.edit-button:hover {
+    background-color: #ccc;
+}
+
+
+.complete-button:hover {
+    background-color: #9dd09d;
+}
+
+
+.delete-button:hover {
+    background-color: #d99b9b;
+}
+
+
+/* ----------------------------- */
+/* Edit Form */
+/* ----------------------------- */
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.edit-form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.edit-form input,
+.edit-form select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.edit-form button {
+    margin-top: 15px;
+}
+
+
+/* ----------------------------- */
+/* Empty Message */
+/* ----------------------------- */
+
+.empty-message {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+}
+
+
+/* ----------------------------- */
+/* Mobile */
+/* ----------------------------- */
+
+@media (max-width: 700px) {
+
+    .add-form {
+        flex-direction: column;
+    }
+
+
+    .task-item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+
+    .actions {
+        justify-content: flex-start;
+    }
+
+
+    .task-stats {
+        flex-direction: column;
+    }
+
+}
+
+/* ----------------------------- */
+/* Category Filters */
+/* ----------------------------- */
+
+.category-filters {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.category-filters a {
+    text-decoration: none;
+    color: #555;
+    background-color: #eee;
+    padding: 7px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.category-filters a:hover {
+    background-color: #ddd;
+}
+
+.category-filters .active-category {
+    background-color: #333;
+    color: white;
+}
+
+
+/* ----------------------------- */
+/* Category Badge */
+/* ----------------------------- */
+
+.category {
+    background-color: #e8e8e8;
+    color: #555;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+/* ----------------------------- */
+/* Sorting */
+/* ----------------------------- */
+
+.sort-form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.sort-form label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sort-form select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
